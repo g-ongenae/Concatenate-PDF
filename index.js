@@ -17,7 +17,7 @@ const checkPath = (path) => {
 }
 
 co(function *() {
-  console.log('Guetting ready for PDF Concatenation...')
+  console.log('Getting ready for PDF Concatenation...')
   const input = yield inquirer.prompt([
     {
       type: 'input',
@@ -44,20 +44,20 @@ co(function *() {
         pdfBuffers = scissors.join(pdfBuffers, scissors(tmpPath))
       }
     } else {
-      throw new Error('pdf file at ' + tmpPath + ' does not exists')
+      throw new Error('PDF file at ' + tmpPath + ' does not exists')
     }
   }
 
-  const output = filesToConcatenate.slice(0,-1) + '.pdf'
+  const output = filesToConcatenate + '.pdf'
 
   pdfBuffers
     .pdfStream()
     .pipe(fs.createWriteStream(output))
     .on('finish', () => {
-      console.log('The new pdf is ready at ' + output)
+      console.log('The new PDF is ready at ' + output)
     })
     .on('error', (error) => {
-      throw new Error('An error occured while concatening the pdfs:', error)
+      throw new Error('An error occured while concatening the PDFs:', error)
     })
 }).catch((error) => {
   console.error(error)
