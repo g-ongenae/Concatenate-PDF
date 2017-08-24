@@ -1,16 +1,17 @@
 {
   "name": "ConcatenatePDF",
   "version": "1.0.0",
-  "description": "Concatenate PDF Pages using Scissors",
+  "description": "Use Scissors with Inquirer and Commander to modify PDF in Terminal",
   "main": "index.js",
   "author": "Guillaume Ongenae",
   "license": "MIT",
   "dependencies": {
     "co": "^4.6.0",
+    "commander": "^2.11.0",
     "inquirer": "^3.2.2",
     "scissors": "^0.2.3"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js -h && echo '\nYou must run ./index.js to use it'"
   }
 }
