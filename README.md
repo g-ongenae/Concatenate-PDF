@@ -1,5 +1,7 @@
 # Concatenate PDF
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/g-ongenae/Concatenate-PDF.svg)](https://greenkeeper.io/)
+
 A **useless** little script to concatenate PDF using [Scissors](https://github.com/tcr/scissors).
 
 All the PDF you want to concatenate needs to have the same name except for their indexes, for instance:
