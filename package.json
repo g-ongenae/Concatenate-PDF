@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "co": "^4.6.0",
-    "inquirer": "^3.2.2",
+    "inquirer": "^5.1.0",
     "scissors": "^0.2.3"
   },
   "scripts": {
